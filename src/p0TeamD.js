@@ -3,5 +3,6 @@
 
 var p0TeamD = function (num) {
     var result = Cube(num);
+    result = Modulo_3(result);
     return result;
 }
