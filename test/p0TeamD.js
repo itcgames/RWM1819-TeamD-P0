@@ -11,5 +11,15 @@ describe('p0TeamD()', function () {
         expect(Cube(2)).to.equal(8);
     });
 
+    it('Modulo First exists', function() {
+      expect(Modulo_First).to.be.a('function');
+
+    })
+
+    it('Modulo First 3,9,5,2,6,1 of 0,0,2,2,0,1', function() {
+      expect(Modulo_First([3,9,5,2,6,1])).to.eql([0,0,2,2,0,1]);
+      
+    })
+
   // Add more assertions here
 });
