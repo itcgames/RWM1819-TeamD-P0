@@ -16,12 +16,12 @@ describe('p0TeamD()', function () {
         expect(Modulo_3).to.be.a("function");
     });
     it("Modulo_3 of 6 is 0", function () {
-        expect(Modulo_3(6).to.equal(0));
+        expect(Modulo_3(6)).to.equal(0);
     });
     it("Modulo_3 of 0 is 0", function () {
         expect(Modulo_3(0)).to.equal(0);
     });
-    it("Modulo_3 of -5 is 1", function() {
-        expect(Modulo_3(-5).to.equal(1));
+    it("Modulo_3 of -5 is -2", function() {
+        expect(Modulo_3(-5)).to.equal(-2);
     });
 });
