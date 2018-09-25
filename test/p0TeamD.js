@@ -12,4 +12,7 @@ describe('p0TeamD()', function () {
     });
 
   // Add more assertions here
+  it('Decrement the first function exists', function() {
+    expect(decrement_if_less_than_first).to.be.a('function');
+  });
 });
