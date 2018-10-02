@@ -1,5 +1,29 @@
 /* global p0TeamD, describe, it, expect, should */
 
+describe("xor_21", function () {
+    "use strict";
+
+    it("xor_21 function exists", function () {
+        expect(xor_21).to.be.a("function");
+    });
+
+    it("compute the xor 21 of 0", function () {
+        expect(xor_21(0)).to.equal(21);
+    });
+
+    it("compute the xor 21 of -5", function () {
+        expect(xor_21(-5)).to.equal(-18);
+    });
+
+    it("compute the xor 21 of 21", function () {
+        expect(xor_21(21)).to.equal(0);
+    });
+
+    it("compute the xor 21 of 42", function () {
+        expect(xor_21(42)).to.equal(63);
+    });
+});
+
 describe('p0TeamD()', function () {
     'use strict';
 
