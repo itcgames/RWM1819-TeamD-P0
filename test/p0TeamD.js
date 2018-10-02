@@ -67,4 +67,25 @@ describe('p0TeamD()', function () {
     it('Fizzbuzz gives the passed num when number cant be divided by both 3 or 5', function () {
         expect(fizzbuzz(-10)).to.equal(-10);
     });
+
+    it('Collatz exists', function () {
+        expect(collatz).to.be.a('function');
+    
+      });
+    
+      it('compute the collatz of 4', function () {
+        expect(collatz(4)).to.equal(2);
+      });
+    
+      it('compute the collatz of 0', function () {
+        expect(collatz(0)).to.equal(0);
+      });
+    
+      it('compute the collatz of 9', function () {
+        expect(collatz(9)).to.equal(28);
+      });
+    
+      it('compute the collatz of -5', function () {
+        expect(collatz(-5)).to.equal(-14);
+      });
 });
