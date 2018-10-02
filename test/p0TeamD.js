@@ -48,4 +48,23 @@ describe('p0TeamD()', function () {
     it("Add 30 to the running total, should equal 45", function() {
         expect(running_total(30)).to.equal(45);
     });
+    it('Fizzbuzz function exists', function () {
+        expect(fizzbuzz).to.be.a('function');
+
+    });
+    it('Fizzbuzz gives 3 when number can be divided by 3', function () {
+        expect(fizzbuzz(6)).to.equal(3);
+    });
+
+    it('Fizzbuzz gives 5 when number can be divided by 5', function () {
+        expect(fizzbuzz(10)).to.equal(5);
+    });
+
+    it('Fizzbuzz gives 0 when number can be divided by 3 AND 5', function () {
+        expect(fizzbuzz(15)).to.equal(0);
+    });
+
+    it('Fizzbuzz gives the passed num when number cant be divided by both 3 or 5', function () {
+        expect(fizzbuzz(-10)).to.equal(-10);
+    });
 });
