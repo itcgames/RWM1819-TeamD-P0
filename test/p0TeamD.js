@@ -94,22 +94,52 @@ describe('p0TeamD()', function () {
 
     it('Collatz exists', function () {
         expect(collatz).to.be.a('function');
-    
+
       });
-    
+
       it('compute the collatz of 4', function () {
         expect(collatz(4)).to.equal(2);
       });
-    
+
       it('compute the collatz of 0', function () {
         expect(collatz(0)).to.equal(0);
       });
-    
+
       it('compute the collatz of 9', function () {
         expect(collatz(9)).to.equal(28);
       });
-    
+
       it('compute the collatz of -5', function () {
         expect(collatz(-5)).to.equal(-14);
       });
+
+      it('Fact exists', function () {
+        expect(fact).to.be.a('function');
+
+      });
+
+      it('fact(4) = 24', function () {
+        expect(fact(4)).to.equal(24);
+      });
+
+      it('fact(10) = 3628800', function () {
+        expect(fact(10)).to.equal(3628800);
+      });
+
+      it('fact(0) = 1', function () {
+        expect(fact(0)).to.equal(1);
+      });
+
+      it('fact(1) = 1', function () {
+        expect(fact(1)).to.equal(1);
+      });
+
+      it('fact(-7) = undefined', function () {
+        expect(fact(-7)).to.equal(undefined);
+      });
+
+      it('fact(string) = undefined', function () {
+        expect(fact('string')).to.equal(undefined);
+      });
+
 });
